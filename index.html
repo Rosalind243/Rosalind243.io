@@ -1,49 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Rosalind Loh | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name - Portfolio</title>
   <style>
+    :root {
+      --primary-color: #4f46e5;
+      --text-color: #333;
+      --bg-color: #f9f9f9;
+      --font: 'Arial', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      max-width: 800px;
-      margin: auto;
-      background-color: #f9f9f9;
-      color: #333;
+      font-family: var(--font);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      padding: 20px;
+      line-height: 1.6;
     }
+
+    header {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
     h1 {
-      color: #0066cc;
+      font-size: 2rem;
+      color: var(--primary-color);
     }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
     section {
-      margin-bottom: 40px;
+      margin-top: 30px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+
+    ul.projects {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul.projects li {
+      margin-bottom: 15px;
+      background: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /* Mobile responsive design */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
 <body>
-
-  <h1>Hello, I'm Rosalind Loh 👋</h1>
+  <header>
+    <h1>Your Name</h1>
+    <p class="subtitle">Web Developer | Designer | Coder</p>
+  </header>
 
   <section>
-    <h2>👩‍💻 About Me</h2>
-    <p>I’m a tech enthusiast and aspiring software engineer. I love working with C++, Python, and exploring robotics and AI!</p>
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate developer who loves creating beautiful, functional, and user-friendly websites.
+    </p>
   </section>
 
   <section>
-    <h2>📂 Projects</h2>
-    <ul>
-      <li><strong>Employee Database System</strong> – A C++ program to manage employee records with file handling.</li>
-      <li><strong>ROS Navigation Bot</strong> – Built an autonomous robot using ROS and sensor integration.</li>
-      <li><strong>Study Loan Portal</strong> – A mock web system for handling student loan applications (HTML/CSS/JS).</li>
+    <h2>Projects</h2>
+    <ul class="projects">
+      <li>
+        <strong>Project One</strong><br />
+        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+      </li>
+      <li>
+        <strong>Project Two</strong><br />
+        <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+      </li>
     </ul>
   </section>
 
   <section>
-    <h2>📫 Contact</h2>
-    <p>Email: rosalind@example.com</p>
-    <p>GitHub: <a href="https://github.com/rosalindloh" target="_blank">github.com/rosalindloh</a></p>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
   </section>
 
+  <footer>
+    &copy; 2025 Your Name
+  </footer>
 </body>
 </html>
-
