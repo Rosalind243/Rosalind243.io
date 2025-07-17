@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>rosalind243.github.io/</title>
+  <title>Your Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <style>
     :root {
       --primary-color: #000000;
@@ -200,6 +201,23 @@
       color: #444;
     }
 
+    .project-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .skill-tag {
+      background-color: #e0e0e0;
+      color: #000;
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
     footer {
       text-align: center;
       margin-top: 40px;
@@ -228,9 +246,7 @@
 </head>
 <body>
   <header>
-    <!-- Replace FILE_ID below with your actual Google Drive image ID -->
     <img src="https://raw.githubusercontent.com/Rosalind243/rosalind243.github.io/main/ProfilePicture/profilepic.jpg" alt="Profile Photo" class="profile-img" />
-
     <div style="max-width: 600px; margin: 0 auto 20px; text-align: left;">
       <h2>About Me</h2>
       <p>
@@ -322,10 +338,10 @@
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="30" height="30">
           <span>C++</span>
         </div>
-      <div style="display: flex; align-items: center; gap: 8px;">
-        <i class="devicon-ros-original colored" style="font-size: 30px;"></i>
-        <span>ROS</span>
-      </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <i class="devicon-ros-original colored" style="font-size: 30px;"></i>
+          <span>ROS</span>
+        </div>
         <div style="display: flex; align-items: center; gap: 8px;">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" width="30" height="30">
           <span>Linux</span>
@@ -340,13 +356,23 @@
       <h2>Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <h3>Project One</h3>
+          <h3>IOTP</h3>
           <p>A smart home system using IoT devices, controlled and monitored via a mobile phone to track your home appliances.</p>
+          <div class="project-skills">
+            <span class="skill-tag">Python</span>
+          </div>
           <a href="https://github.com/Rosalind243/SmartHomeSystem" target="_blank">View on GitHub</a>
         </div>
         <div class="project-card">
-          <h3>Project Two</h3>
-          <p>An AI chatbot built with Node.js and integrated with OpenAI's GPT API.</p>
+          <h3>LIMO_NAVIGATION</h3>
+          <p>Autonomous navigate to each waypoint while performing obstacle avoidance.</p>
+          <div class="project-skills">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">ROS</span>
+            <span class="skill-tag">RTAB-Map</span>
+            <span class="skill-tag">move_base</span>
+          </div>
           <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
         </div>
       </div>
